@@ -1,0 +1,25 @@
+/* Make second-level headers green */
+*
+{
+    font-family: Arial;
+}
+
+.original
+{
+    color: green;
+}
+
+.original1{
+    color: greenyellow;
+}
+  /* Leave those in the sidebar alone so they use their parent's color */
+.inherited
+{
+    background-color: antiquewhite;
+}
+
+.modified
+{
+    color: brown;
+    background-color: blue;
+}

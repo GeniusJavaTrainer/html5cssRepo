@@ -1,0 +1,21 @@
+.container-bullet-left
+{
+    width: 40%;
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 7px;
+    float: left;
+    box-shadow: 10px 10px black;
+    margin-bottom: 30px;
+}
+
+.container-bullet-right
+{
+    width: 40%;
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 7px;
+    float: right;
+    box-shadow: 10px 10px black;
+    margin-bottom: 30px;
+}

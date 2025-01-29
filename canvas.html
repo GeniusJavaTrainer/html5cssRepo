@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid gray">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+        
+        <script>
+            let c = document.getElementById("myCanvas");//Get connected to canvas with id = myCanvas
+            let ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+        </script>
+</body>
+</html>

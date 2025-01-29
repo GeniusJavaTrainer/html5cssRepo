@@ -1,0 +1,257 @@
+*
+{
+    font-family: Arial;
+}
+
+h1
+{
+    margin-left: 10px;
+}
+
+h2
+{
+    margin-left: 15px;
+}
+
+h3
+{
+    margin-left: 30px;
+}
+
+p
+{
+    margin-left: 30px;
+    text-indent: 30px;
+}
+
+.container
+{
+    width: 80%;
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 10px 10px black;
+}
+
+.container-bullet-left
+{
+    width: 40%;
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 7px;
+    float: left;
+    box-shadow: 10px 10px black;
+    margin-bottom: 30px;
+}
+
+.container-bullet-right
+{
+    width: 40%;
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 7px;
+    float: right;
+    box-shadow: 10px 10px black;
+    margin-bottom: 30px;
+}
+
+.container-image
+{
+    width: 80%;
+    min-height: 510px;
+    margin-bottom: 40px;
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 10px 10px black;
+}
+
+ul.square
+{
+    list-style-type: square;
+}
+
+ol.upper-roman
+{
+    list-style-type: upper-roman;
+}
+
+ol.lower-roman
+{
+    list-style-type: lower-roman;
+}
+
+ol.lower-alpha
+{
+    list-style-type: lower-alpha;
+}
+
+ol.upper-alpha
+{
+    list-style-type: upper-alpha;
+}
+
+ol.decimal
+{
+    list-style-type: decimal;
+}
+
+ul li
+{
+    margin-bottom: 10px;
+}
+
+ol li
+{
+    margin-bottom: 10px;
+}
+
+.tbl, .mth, .mtd
+{
+    border: 2px;
+    text-align: left;
+    padding: 5px;
+    border-collapse: collapse;
+    border-style: solid;
+    width: 80%;
+}
+
+tr:nth-child(even)
+{
+    background-color: gray;
+}
+
+fieldset{
+    border-radius: 7px;
+    background-color: lightblue;
+}
+
+input[type=text], [type=number], [type=email], [type=tel], [type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus, [type=number]:focus, [type=email]:focus, [type=tel]:focus, [type=date]:focus, select:focus {
+    background-color: bisque;
+  } 
+
+  .myinput{
+    background-color: white;
+    background-image: url('../images/icons8-search-50.png');
+    background-size: 30px 30px;
+    background-position: 0px 5px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  form
+  {
+    background-color: lightyellow;
+  }
+
+  .mybutton{
+    background-color: blue;
+    border-radius: 7px;
+    color: white;
+    padding: 12px 20px;
+}
+
+/* div p { background-color: yellow;} */
+
+/* div > p { background-color: yellow; }  */
+
+/* div + p { background-color: bisque; } */
+
+div ~ h1 { background-color: yellow;}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item
+{
+    background-color: lightgoldenrodyellow;
+    border-color: black;
+    border-width: 2px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 7px;
+    text-align: left;
+    box-shadow: 10px 10px black;
+}
+
+.mybutton1{
+    background-color: blue;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 12px 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+     /* align-items: stretch; */
+    /* align-items: baseline; */
+    justify-content: right;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  div.ex1 {
+    background-color: dodgerblue;
+    width: 110px;
+    height: 110px;
+    overflow: scroll;
+  }
+  
+  div.ex2 {
+    background-color: dodgerblue;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+  }
+  
+  div.ex3 {
+    background-color: dodgerblue;
+    width: 110px;
+    height: 110px;
+    overflow: auto;
+  }
+  
+  div.ex4 {
+    background-color: dodgerblue;
+    width: 110px;
+    height: 110px;
+    overflow: clip;
+  }
+  
+  div.ex5 {
+    background-color: dodgerblue;
+    width: 110px;
+    height: 110px;
+    overflow: visible;
+  }

@@ -1,0 +1,32 @@
+#page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav  main"
+      "foot  foot";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+  }
+  
+  #page > header {
+    grid-area: head;
+    height: 100px;
+    background-color: #8ca0ff;
+  }
+  
+  #page > nav {
+    grid-area: nav;
+    min-height: 100px;
+    background-color: #ffa08c;
+  }
+  
+  #page > main {
+    grid-area: main;
+    background-color: #ffff64;
+  }
+  
+  #page > footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+  }  

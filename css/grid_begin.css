@@ -1,0 +1,71 @@
+*{
+    font-family: Arial;
+}
+.container{
+    display: grid;
+    background-color: bisque;
+    box-sizing: border-box;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px 10px;
+}
+
+.item, .item-wide-column, .item-wide-row, .item-wide-row1, .item-wide-row2,
+.item-area, .item-area1, .item-wide-column-span, .item-wide-column-span1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: skyblue;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+}
+
+.item-wide-column{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-wide-column-span{
+    grid-column: 1 / 3;
+}
+
+.item-wide-column-span1{
+    grid-column: 1 / span 2;
+}
+
+.item-wide-row{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item-wide-row1{
+    grid-row: 1 / 3;
+}
+
+.item-wide-row2{
+    grid-row: 1 / span 2;
+}
+
+.item-area{
+    grid-area: 1 / 1 / 3 / 3;
+    /*         sr/ sc/ er / ec
+    sr ==> start row
+    sc ==> start column
+    er ==> end row
+    ec ==> end column
+
+    start row & start column are inclusive
+    end row & end column are exclusive
+    */
+}
+
+.item-area1{
+    grid-area: 1 / span 2 / 3 / span 2;
+}

@@ -1,0 +1,10 @@
+*
+{
+    font-family: Arial;
+}
+
+.wrapper {
+    column-count: 3;
+    column-rule: solid;
+    column-gap: 5px;
+  }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script>
+       function showIt(){
+        let count = 0;
+        if (sessionStorage.clickcount) {
+            count = parseInt(sessionStorage.getItem("clickcount"))
+            document.getElementById("output").innerHTML = "<h3>You visited this page " + count + " times.</h3>"
+
+            sessionStorage.setItem("clickcount",""+(count+1))
+        } else {
+            document.getElementById("output").innerHTML = "<h3>NewBie.</h3>"
+            sessionStorage.setItem("clickcount","1")
+          }
+        }
+    </script>
+</head>
+<body>
+  
+    <form method="post">
+        <input class="mybutton" type="button" value="Click me!" onclick="showIt()">
+    </form>
+
+    <div id="output">
+
+    </div>
+</body>
+</html>

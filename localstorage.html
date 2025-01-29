@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script>
+        function storeIt(){
+            localStorage.setItem("fname",document.getElementById("fname").value)
+            localStorage.setItem("lname",document.getElementById("lname").value)
+        }
+
+        function showIt(){
+            let fname = localStorage.fname;
+            let lname = localStorage.lname;
+
+            document.getElementById("output").innerHTML = "<h3>"+ fname + "</h3>" +
+                                                          "<h3>"+ lname + "</h3>"
+        }
+    </script>
+</head>
+<body>
+  
+    <form method="post">
+        First Name: <input type="text" name="fname" placeholder="Enter your first name" 
+        id="fname"/><br/>
+        Last Name: <input type="text" name="lname" placeholder="Enter your last name" id="lname" 
+        onblur="storeIt()"/><br/>
+        <input class="mybutton" type="button" value="Submit" onclick="showIt()">
+    </form>
+
+    <div id="output">
+
+    </div>
+</body>
+</html>

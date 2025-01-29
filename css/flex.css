@@ -1,0 +1,42 @@
+*
+{
+    font-family: Arial;
+}
+
+.container
+{
+    display: flex;
+    min-height: 50px;
+    background-color:lightsteelblue;
+}
+
+.item
+{
+    background-color: darkcyan;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 98%;
+}
+
+a:link, a:visited
+{
+    background-color: lightblue;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+  /* a:hover, a:active {
+    background-color: red;
+  } */
+
+strong
+{
+    color: white;
+}

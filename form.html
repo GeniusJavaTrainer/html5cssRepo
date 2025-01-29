@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function show(){
+            document.getElementById("rating").innerHTML = document.getElementById("feedback").value;
+        }
+    </script>
+</head>
+<body>
+    <h1>New Joinee Registration Form</h1>
+
+    <form method="get">
+        RollNo: <input type="number" name="rollno" min="1" max="60" placeholder="Enter your Roll No."/><br/>
+        Name: <input type="text" name="name" placeholder="Enter your name"/><br/>
+
+        <fieldset>
+            <legend>Personal Details:</legend>
+            Email: <input type="email" name="email"/><br>
+            Contact: <input type="tel" name="contact" pattern="[\\+]{1}[0-9]{2}-[0-9]{10}"><br>
+            Date of Birth: <input type="date" name="dob" placeholder="dd-mm-yyyy" min="2001-01-01"/><br>
+            Hobbies: <input type="checkbox" name="hobbies" value="chess">Chess
+                     <input type="checkbox" style="margin-left: 20px;" name="hobbies">Cricket
+        </fieldset>
+
+        Branch: <input type="radio" name="branch" value="CS"> CS
+                <input type="radio" style="margin-left: 20px;" name="branch" value="IT"> IT
+                <input type="radio" style="margin-left: 20px;" name="branch" value="EE"> EE
+                <input type="radio" style="margin-left: 20px;" name="branch" value="Civil"> Civil <br/>
+                <br/>
+
+        Preferred Location: <select name="location" multiple>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Bengaluru">Bengaluru</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Mumbai">Mumbai</option>
+                            </select>
+                            <br/>
+        
+        Choose your favorite technology: <br>
+        <input list="technology" name="technology" id="tech">
+        <datalist id="technology">
+            <option value="Java">
+            <option value="Dot Net">
+            <option value="AI">
+            <option value="UI">
+            <option value="Databases">
+        </datalist>
+        <br>
+
+        How much do you rate this joining process?
+        <input type="range" id="feedback" min="0" max="5" step="0.1" onchange="show()"><br/>
+        <div id="rating" style="color: red;margin-left: 320px;"></div>
+        <input class="mybutton" type="submit" value="Submit">
+    </form>
+</body>
+</html>

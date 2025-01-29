@@ -1,0 +1,12 @@
+*{
+    font-family: Arial;
+}
+.surrounding{
+    background-color: antiquewhite;
+    border-radius: 7px;
+    border-style: solid;
+    box-shadow: 10px 10px black;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    text-indent: 10px;
+}

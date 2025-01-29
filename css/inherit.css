@@ -1,0 +1,16 @@
+/* Make second-level headers green */
+*
+{
+    font-family: Arial;
+}
+
+h2
+{
+    color: green;
+}
+  
+  /* Leave those in the sidebar alone so they use their parent's color */
+.side h2
+{
+    background-color: antiquewhite;
+}  

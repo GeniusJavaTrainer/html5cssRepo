@@ -1,0 +1,19 @@
+.myinput {
+    display : inline-block;
+    box-sizing: border-box;
+    margin : 8px 0;
+    width : 100%;
+
+    background-color: white;
+    background-image: url('../images/icons8-search-50.png');
+    background-size: 30px 30px;
+    background-position: 0px 5px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+
+    padding: 12px 20px;
+    padding-left: 40px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}

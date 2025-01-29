@@ -1,0 +1,11 @@
+.parent > * + * {
+    margin-top: 1.5em;
+    color: greenyellow;
+  }
+  
+  .child {
+    width: 150px;
+    height: 50px;
+    background: red;
+  }
+  
