@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        #div1{
+            width: 96%;
+            height: 50px;
+            background-color: lightgray;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-left: 20px solid black;
+            border-right: 20px solid black;
+        }
+
+        #logo-div{
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            padding-left: 2%;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #nav-div{
+            width: 100%;
+            min-height: 30px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        #header-banner-div{
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        #main-div{
+            width: 100%;
+        }
+
+        #sidebar-div{
+            width: 20%;
+            min-height: 400px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 400px;
+            float:left;
+        }
+
+        #body-div{
+            width: 75%;
+            min-height: 400px;
+            background-color: lightgray;
+            float: right;
+            text-align: center;
+            line-height: 400px;
+        }
+
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #footer{
+            margin-top: 10px;
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #wrapper{
+            width: 80%;
+            margin: auto;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+        <!-- <h1>Heading text</h1>
+        <p>Paragraph Test</p>
+
+        <div id="div1">
+            Div1
+        </div> -->
+        <div id="wrapper">
+
+        
+        <div id="logo-div">
+            Logo
+        </div>
+
+        <div id="nav-div">
+            Navigation
+        </div>
+
+        <div id="header-banner-div">
+            Header/Banner
+        </div>
+
+        <div id="main-div" class="clearfix">
+            <div id="sidebar-div">
+                Sidebar
+            </div>
+
+            <div id="body-div">
+                Body
+            </div>
+        </div>
+
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        #div1{
+            width: 96%;
+            height: 50px;
+            background-color: lightgray;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-left: 20px solid black;
+            border-right: 20px solid black;
+        }
+
+        #logo-div{
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            padding-left: 2%;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #nav-div{
+            width: 100%;
+            min-height: 30px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        #header-banner-div{
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        #main-div{
+            width: 100%;
+            align-items: center;
+        }
+
+        #main-div .sidebar{
+            width: 30%;
+            min-height: 400px;
+            background-color: lightgray;
+            text-align: center;
+            margin-left: 30px;
+            float: left;
+            line-height: 400px;
+        }
+
+        #main-div .sidebar:nth-child(2){
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #body-div{
+            width: 30%;
+            min-height: 400px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 400px;
+            margin-left: 10px;
+        }
+
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #footer{
+            margin-top: 10px;
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #wrapper{
+            width: 100%;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>  
+    <div id="wrapper">
+        <div id="logo-div">
+            Logo
+        </div>
+
+        <div id="nav-div">
+            Navigation
+        </div>
+
+        <div id="header-banner-div">
+            Header/Banner
+        </div>
+
+        <div id="main-div" class="clearfix">
+            <div class="sidebar">
+                Block - 1
+            </div>
+
+            <div class="sidebar">
+                Block - 2
+            </div>
+
+            <div class="sidebar">
+                Block - 3
+            </div>
+        </div>
+
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
