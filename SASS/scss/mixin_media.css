@@ -1,0 +1,16 @@
+div {
+  border: 1px solid red;
+  background-color: greenyellow;
+}
+
+@media screen and (max-width: 1000px) {
+  div {
+    background-color: antiquewhite;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    background-color: yellow;
+  }
+}

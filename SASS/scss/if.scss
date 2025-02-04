@@ -1,0 +1,10 @@
+$test: 5;
+$j: 9;
+
+p {
+   @if $test < 5 and $j == 9{ 
+       color: blue;  
+    }@else if $test >= 5{
+      color: red;
+    }
+}

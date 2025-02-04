@@ -1,0 +1,18 @@
+@mixin trial($width) {
+    @media screen and (max-width: $width){
+        @content
+    }
+}
+
+div{
+    border: 1px solid red;
+    background-color: greenyellow;
+
+    @include trial(1000px){
+        background-color: antiquewhite;
+    }
+
+    @include trial(600px){
+        background-color: yellow;
+    }
+}

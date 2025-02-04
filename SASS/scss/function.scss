@@ -1,0 +1,16 @@
+@function add($numbers...) {
+    /*
+
+    */
+    $add: 0; 
+    @each $number in $numbers { 
+        $add: $add + $number;//50+30 = 80 + 100 = 180
+    } 
+    @return $add; 
+} 
+ 
+.gfg { 
+    width: add(1, 2, 3);
+    border-color: red;
+    border-style: solid;
+    }    

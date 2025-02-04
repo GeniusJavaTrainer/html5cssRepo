@@ -1,0 +1,13 @@
+$myFont: Helvetica, sans-serif;
+$primary-color: red;
+
+.myFirstClass
+{
+  font-family: $myFont;
+  color: $primary-color;
+}
+
+.mySecondClass
+{
+  background-color: $primary-color;
+}

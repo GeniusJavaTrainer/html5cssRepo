@@ -1,0 +1,7 @@
+@mixin bordered($color: blue, $width: 1px) {
+    border: $width solid $color;
+  }
+
+  .myTips {
+    @include bordered($color: orange);
+  }
